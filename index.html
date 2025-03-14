@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+
+<html
+  lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title>ГазАкваСервис - Алексей Козгов</title>
+
+    <meta content="Responsive Tailwind CSS Template" name="description" />
+    <meta content="газ, котлы, установка, обслуживание, фильтры, водоснабжение, волоколамск" name="keywords" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="icon" type="image/svg+xml" href="images/fav.svg">
+
+    <!-- CSS  -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body> 
+
+    <!--================= loader ================-->
+
+  <div class="absolute top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center m-auto bg-white loader">
+    
+        <div class="w-12 h-12 border-4 border-solid rounded-full animate-spin border-red-500 border-t-transparent">
+        </div>
+    
+    </div>
+
+    <!--================= main ================-->
+
+    <main class="w-full mx-auto">
+
+            <!--================= top menu ================-->
+
+            <header class="w-full py-3 border-b-1 border-solid border-gray-100">
+
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between">
+
+                        <div class="flex flex-row items-center flex-shrink-0">
+
+                                <svg class="w-9 h-9 text-red-500" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 8v8" />
+                                <path d="M14 8l-2.5 4l2.5 4" />
+                                <path d="M10 12h1.5" />
+                                <path d="M7.5 4.21v.01" />
+                                <path d="M4.21 7.5v.01" />
+                                <path d="M3 12v.01" />
+                                <path d="M4.21 16.5v.01" />
+                                <path d="M7.5 19.79v.01" />
+                                <path d="M12 21v.01" />
+                                <path d="M16.5 19.79v.01" />
+                                <path d="M19.79 16.5v.01" />
+                                <path d="M21 12v.01" />
+                                <path d="M19.79 7.5v.01" />
+                                <path d="M16.5 4.21v.01" />
+                                <path d="M12 3v.01" />
+                            </svg>
+        
+                            <a href="https://kozgov.vercel.app/" target="_blank" class="px-1 text-xl font-bold text-red-500">
+
+                                ГазАкваСервис
+                            </a> 
+
+                        </div>       
+        
+                        <div class="hidden lg:ml-16 lg:flex lg:items-center lg:justify-center lg:space-x-10 uppercase">
+
+                            <div class="flex items-center space-x-10">
+
+                                      <!-- phone top -->
+                                <p class="flex items-center px-2 text-sm">
+
+                                    <svg class="w-5 h-5 m-2 text-gray-800"  viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+
+                                    +7 916 748 04 04
+                                </p>                                           
+
+                                    <!-- name top -->        
+                                <a class="flex items-center px-2 hover:text-red-500 text-xs"
+                                href="https://wa.me/79167480404?text=Я%20заинтересован%20в%20ваших%20услугах" target="_blank">
+
+                                <svg class="w-5 h-5 m-2 text-gray-800" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                    <path d="M8 10h.01" />
+                                    <path d="M12 10h.01" />
+                                    <path d="M16 10h.01" />
+                                </svg>         
+
+                                    алексей чат
+                                </a>
+
+                            </div>                      
+
+                    <!-- visiters counter -->
+					<div class="flex items-center px-2">
+
+                        <svg class="w-6 h-6 mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                            <polyline points="16 7 22 7 22 13" />
+                        </svg>
+
+					<div class="w-[200px] text-xs"><span class="counter-value" data-target="1246">420</span> просмотров </div>						
+					
+					</div>
+
+            </div>
+
+            <!-- navigation -->			
+
+				<!-- open button -->				
+				<button id="menu" class="flex cursor-pointer" onclick="openNav()">			
+
+                    <svg class="flex h-9 w-9 cursor-pointer bg-transparent pr-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+				
+				</button>	
+
+				<!-- close button -->				
+				<button id="close-nav" onclick="closeNav()">
+
+                    <svg class="absolute z-50 top-8 right-16 w-6 h-6 cursor-pointer text-black" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                    </svg>
+
+				</button>
+
+				<!-- nav content-->
+				<div id="nav-content"
+					class="fixed z-40 top-0 right-0 h-full w-full overflow-hidden bg-white shadow-lg transition-all duration-300">
+		
+					<ul class="nav h-full w-full lg:ml-16 ml-8  
+					grid auto-cols-max content-center justify-start transition duration-500">
+
+					<li class="text-2xl font-bold text-red-500 pb-16">ГазАкваСервис &reg;</li>
+
+					<li><a href="#">Главная</a></li>
+					<li><a href="#about">О нас</a></li>
+					<li><a href="#service">Услуги</a></li>    
+					<li><a href="#news">Новости</a></li>  
+					<li><a href="#contact">Контакт</a></li>
+
+					<li class="flex pt-20">Copyright &copy; ГазАкваСервис</li>
+
+					</ul>			
+
+				</div>	                    
+                        
+                    </div>
+                </div>
+
+            </header>
+
+            <!--================= head top ================-->  
+
+            <section class="h-[575px] w-full top-bg">
+
+                <div class="flex px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+
+                    <div class="flex w-full lg:w-1/2 h-[475px] p-4 items-center">         
+
+                        <div class="w-full text-center lg:text-left">
+
+                            <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">                              
+                                                            
+                            <h1 class="text-6xl capitalize">
+                                алексей
+                            </h1>
+                            
+                            <h2 class="col-start-1 col-end-2 text-4xl">
+                                мастер
+                            </h2>                
+        
+                            <div class="mt-6 ml-2 lg:mt-14 lg:flex lg:items-center">
+
+                                <div class="flex justify-center flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
+
+                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white" src="./images/k-1.webp" alt="" />
+
+                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white" src="./images/k-2.webp" alt="" />
+
+                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white" src="./images/k-3.webp" alt="" />
+
+                                </div>
+    
+                                <p class="mt-4 text-md lg:mt-0 lg:ml-4">Присоединяйтесь к более, чем <span class="font-bold">240+ клиентов</span>, довольных результатом нашей работы.</p>
+
+                            </div>
+
+                        </div>
+    
+                        <div class="flex items-center justify-center lg:justify-start space-x-3 mt-8">
+
+                        <a
+                        href="https://wa.me/79167480404?text=Я%20заинтересован%20в%20ваших%20услугах" target="_blank"
+                            title=""
+                            class="inline-flex items-center justify-center px-8 py-3 text-sm font-medium text-white transition-all duration-200 rounded-sm cursor-pointer bg-red-500 hover:shadow-2xl">
+
+                            чат
+
+                            <svg class="w-6 h-6 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z" />
+                            </svg>
+
+                        </a>
+
+                        <!-- social top -->
+                        <p                               
+                        class="flex items-center ml-4 py-4 text-lg font-bold cursor-pointer">    
+                        
+                        мы в
+
+                        <svg class="w-6 h-6 mx-2 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M5 12h.5m3 0h1.5m3 0h6" />
+                                <path d="M15 16l4 -4" />
+                                <path d="M15 8l4 4" />
+                            </svg>
+
+                        </p>
+
+                            <!-- youtube -->
+                        <a href="https://www.youtube.com/playlist?list=PLlAv2xzR8ipGxMtKrdd7uL3KnjS3-WVMi" target="_blank">
+                        
+                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" />
+                        </svg>
+                        
+                        </a>
+
+                    <!-- vk -->
+                    <a href="https://vk.com/kozgov" target="_blank">
+                    
+                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z">
+                        </path>
+                        </svg>
+                    
+                    </a>
+
+                    <!-- ok -->
+                    <a href="https://ok.ru/group/57224192065662" target="_blank">
+                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                            d="m12.088 14.532 2.888 2.888a1.511 1.511 0 1 1-2.138 2.137l-2.837-2.837-2.851 2.837c-.288.295-.675.442-1.063.442s-.775-.148-1.063-.442c-.6-.591-.6-1.55 0-2.137l2.888-2.888a9.6 9.6 0 0 1-2.996-1.241 1.512 1.512 0 1 1 1.61-2.56 6.56 6.56 0 0 0 6.95 0 1.513 1.513 0 0 1 1.612 2.56 9.7 9.7 0 0 1-3 1.241M10 10.322a5.167 5.167 0 0 1-5.162-5.16C4.838 2.314 7.154 0 10 0s5.162 2.315 5.162 5.162A5.167 5.167 0 0 1 10 10.322m0-7.297c-1.178 0-2.138.959-2.138 2.137S8.822 7.3 10 7.3a2.14 2.14 0 0 0 2.138-2.138A2.14 2.14 0 0 0 10 3.025" />
+                        </svg>
+                    </a>       
+                             
+                            </div>
+                        </div>                        
+
+
+                    </div>              
+                
+            <!-- head image -->
+            <div class="hidden lg:flex w-full scale-90 lg:w-1/2 h-[475px] object-cover mt-[80px]">
+            
+                <img class="rounded-bl-[56px]" src="./images/top.webp" alt="">
+            
+            </div>        
+        
+        </div>
+
+            </section>
+
+              <!--================= equipment ================-->
+
+            <section class="reveal flex w-full flex-row flex-wrap items-center justify-center gap-12 lg:mt-30 lg:mb-20 my-12">
+            
+                <img class="h-[50px] object-cover" src="./images/buderus.webp" alt="" />
+            
+                <img class="h-[50px] object-cover" src="./images/ferroli.webp" alt="" />
+            
+                <img class="h-[50px] object-cover" src="./images/baxi.webp" alt="" />
+            
+                <img class="h-[50px] object-cover" src="./images/bosch.webp" alt="" />
+            
+                <img class="h-[50px] object-cover" src="./images/viessmann.webp" alt="" />
+            
+            </section>
+
+        <!--================= about ================-->
+
+        <section class="reveal pt-16 bg-[#e9f3fa]" id="about">
+
+        <div class="w-full mx-auto max-w-7xl">
+
+            <!-- about 1 -->
+            <div class="mx-auto overflow-hidden grid columns-1 lg:grid-cols-2">
+             
+                    <img class="grid w-full place-content-center scale-90 " src="./images/app_1.webp" alt="" />   
+
+                <div class="flex flex-col h-full p-4 lg:p-16 justify-center">
+
+                 <svg class="w-12 h-12 text-red-600 ml-6" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 8v8" />
+                    <path d="M14 8l-2.5 4l2.5 4" />
+                    <path d="M10 12h1.5" />
+                    <path d="M7.5 4.21v.01" />
+                    <path d="M4.21 7.5v.01" />
+                    <path d="M3 12v.01" />
+                    <path d="M4.21 16.5v.01" />
+                    <path d="M7.5 19.79v.01" />
+                    <path d="M12 21v.01" />
+                    <path d="M16.5 19.79v.01" />
+                    <path d="M19.79 16.5v.01" />
+                    <path d="M21 12v.01" />
+                    <path d="M19.79 7.5v.01" />
+                    <path d="M16.5 4.21v.01" />
+                    <path d="M12 3v.01" />
+                </svg>
+
+                <h2 class="px-4 text-4xl font-bold my-4">                 
+                             ГазАкваСервис
+                </h2> 
+
+                <p class="px-4 text-md">                 
+                    Ремонт, монтаж и техническое обслуживание газового оборудования лучших производителей.
+                </p> 
+
+                <p class="mt-4 px-4 text-md">                 
+                    Мы используем индивидуальный и комплексный подход к решению любых проблем в системе отопления зданий и помещений.
+                </p> 
+            
+            </div>    
+               
+            </div>
+
+                <!-- about 2 -->
+
+                <div class="mx-auto overflow-hidden grid columns-1 lg:grid-cols-2">             
+                  
+                <div class="flex flex-col h-full p-4 lg:p-16 justify-center ml-0 lg:ml-24">
+
+                <svg class="w-12 h-12 text-blue-400 ml-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                    <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                    <path d="M9 17v-4" />
+                    <path d="M12 17v-1" />
+                    <path d="M15 17v-2" />
+                    <path d="M12 17v-1" />
+                </svg>
+
+                <h2 class="px-4 text-4xl font-bold my-4">                 
+                    Наши преимущества
+                </h2> 
+
+                <dl class="px-4 text-md">
+                    <p>Высокое качество предоставляемых услуг.</p>
+                    <p>Широкий спектр обслуживаемых марок.</p>
+                    <p>Сжатые cроки выполнения заказа.</p>
+                    <p>Профессионализм и опыт работ.</p>                   
+                    <p>Демократичные цены.</p>
+                    <p>Гарантии.</p>
+                </dl>
+
+            </div> 
+                        
+            <img class="grid w-full place-content-center scale-80 " src="./images/app_2.webp" alt="" />
+
+            </div>     
+               
+            </div> 
+
+        </section>      
+
+        <!--================= service ================-->
+
+        <section class="reveal bg-[#f8fcff] py-20" id="service">
+
+            <div class="mx-auto max-w-6xl place-content-center">
+
+                <div class="text-center mb-12 px-4">
+                
+                    <h2 class="mb-4 font-bold text-4xl">Наши услуги</h2>
+
+                    <h5 class="text-md tracking-wide">Для постоянных клиентов действует гибкая система скидок.</h5>                 
+
+                </div> 
+
+                <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2">
+
+                    <!-- service 1 -->
+                    <div class="p-6 bg-white rounded-3xl">
+
+                        <span class="relative z-0 inline-flex mb-6 bg-violet-50 h-14 w-14"
+                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
+
+                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
+
+                                <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M3 21v-13l9 -4l9 4v13" />
+                                    <path d="M13 13h4v8h-10v-6h6" />
+                                    <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
+                                </svg>
+
+                            </div>
+                        </span>
+
+                        <h5 class="mt-2 text-xl">
+                            Диагностика и ремонт котлов и газового оборудования
+                        </h5>
+
+                        <p class="mt-2">
+                            Консультирование по эксплуатации котельного оборудования.
+                        </p>
+
+                    </div>
+
+                    <!--  service 2 -->
+                    <div class="p-6 bg-white rounded-3xl">
+
+                        <span class="relative z-0 inline-flex mb-6 bg-red-50 h-14 w-14"
+                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
+                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
+
+                                <svg class="w-10 h-10 text-red-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 7h.01" />
+                                    <path d="M15 7h.01" />
+                                    <path d="M9 7h.01" />
+                                    <path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
+                                    <path d="M9 15h6" />
+                                    <path d="M5 11h14" />
+                                </svg>
+
+                            </div>
+                        </span>
+
+                        <h5 class="mt-2 text-xl">
+                            Монтаж газового оборудования
+                        </h5>
+
+                        <p class="mt-2">
+                            Замена котлов. Монтаж и настройка работы котлов.
+                        </p>
+
+                    </div>
+
+                    <!-- service 3 -->
+                    <div class="p-6 bg-white rounded-3xl">
+
+                        <span class="relative z-0 inline-flex mb-6 bg-blue-50 h-14 w-14"
+                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
+                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
+
+                                <svg class="w-10 h-10 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
+                                    <path d="M12 14m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M8 6h.01" />
+                                    <path d="M11 6h.01" />
+                                    <path d="M14 6h2" />
+                                    <path d="M8 14c1.333 -.667 2.667 -.667 4 0c1.333 .667 2.667 .667 4 0" />
+                                </svg>
+
+                            </div>
+                        </span>
+
+                        <h5 class="mt-2 text-xl">
+                            Промывка котлов и отопления
+                        </h5>
+
+                        <p class="mt-2">
+                            Техническое обслуживание котлов. Промывка теплообменников.
+                        </p>
+
+                    </div>
+
+                    <!-- service  4 -->
+                    <div class="p-6 bg-white rounded-3xl">
+
+                        <span class="relative z-0 inline-flex mb-6 bg-emerald-50 h-14 w-14"
+                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
+
+                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
+
+                                <svg class="w-10 h-10 text-sky-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M12 20l-3 1v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1.5" />
+                                    <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M19.001 15.5v1.5" />
+                                    <path d="M19.001 21v1.5" />
+                                    <path d="M22.032 17.25l-1.299 .75" />
+                                    <path d="M17.27 20l-1.3 .75" />
+                                    <path d="M15.97 17.25l1.3 .75" />
+                                    <path d="M20.733 20l1.3 .75" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+
+                        <h5 class="mt-2 text-xl">
+                            Монтаж дымоходов и газоходов.
+                        </h5>
+
+                        <p class="mt-2">
+                            Продажа газовых счётчиков любого производителя.
+                        </p>
+
+                    </div>
+
+                    <!-- service  5 -->
+                    <div class="p-6 bg-white rounded-3xl">
+
+                        <span class="relative z-0 inline-flex mb-6 bg-sky-50 h-14 w-14"
+                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
+
+                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
+
+                                <svg class="w-10 h-10 text-orange-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M2 12h2l2 -5l3 10l3 -10l3 10l3 -10l1.5 5h2.5" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+
+                        <h5 class="mt-2 text-xl">
+                            Монтаж ретро-электропроводки
+                        </h5>
+
+                        <p class="mt-2">
+                            Алмазное бурение отверстий в бетоне. Уникальное оборудование.
+                        </p>
+
+                    </div>
+
+                    <!--  service 6 -->
+                    <div class="p-6 bg-white rounded-3xl">
+
+                        <span class="relative z-0 inline-flex mb-6 bg-slate-100 h-14 w-14"
+                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
+
+                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
+
+                                <svg class="w-10 h-10 text-violet-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M4.072 20.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />
+                                    <path
+                                        d="M16.072 20.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />
+                                    <path
+                                        d="M10.072 10.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />
+                                </svg>
+
+                            </div>
+
+                        </span>
+
+                        <h5 class="mt-2 text-xl">
+                            Монтаж систем водоснабжения
+                        </h5>
+
+                        <p class="mt-2">
+                            Монтаж теплых полов. Удаление засоров в канализации.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+           <!--================= news ================-->
+
+     <section class="reveal py-20 px-4" id="news">
+
+    <div class="mx-auto max-w-6xl place-content-center">
+
+            <div class="text-center mb-12 px-4">
+            
+                <h2 class="mb-4 font-bold text-4xl">Новости</h2>
+
+                <h5 class="text-md tracking-wide">Мы на рынке обслуживания котлов более 10 лет.</h5>
+                
+            </div>
+
+            <!-- card grid -->
+
+    <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-12">
+
+      <!-- card 1 -->
+        <div class="grid grid-cols-[40%_60%] gap-4">
+
+          <div class="overflow-hidden">
+            <img class="object-cover rounded-xl h-[160px]" src="./images/news_1.webp" alt="">
+          </div>
+  
+          <div class="w-full p-2 place-content-center">
+
+            <h3 class="text-lg font-bold leading-none">Котлы сегодня</h3>   
+
+            <p class="mt-3">
+                Их установка, сервис и ремонт представляют собой сложные технологические процессы, требующие специальных знаний и  высокой квалификации.
+            </p>
+          
+          </div>
+
+        </div>
+
+         <!-- card 2 -->
+         <div class="grid grid-cols-[40%_60%] gap-4">
+
+            <div class="overflow-hidden">
+              <img class="object-cover rounded-xl  h-[160px]" src="./images/news_2.webp" alt="">
+            </div>
+    
+            <div class="w-full p-2 place-content-center">
+  
+              <h3 class="text-lg font-bold leading-none">Ремонт</h3>
+  
+              <p class="mt-3">
+                Самостоятельный ремонт или обслуживание отопительного оборудования могут нести серьезную угрозу здоровью и безопасности.
+              </p>
+            
+            </div>
+  
+          </div>
+        
+        <!-- card 3 -->
+        <div class="grid grid-cols-[40%_60%] gap-4">
+
+            <div class="overflow-hidden">
+              <img class="object-cover rounded-xl h-[160px]" src="./images/news_3.webp" alt="">
+            </div>
+    
+            <div class="w-full p-2 place-content-center">
+  
+              <h3 class="text-lg font-bold leading-none">Доверяйте профессионалам</h3>
+  
+              <p class="mt-3">
+                Мы используем индивидуальный и комплексный подход к решению любых проблем в системе отопления зданий и помещений.
+              </p>
+            
+            </div>
+  
+          </div>
+
+            <!-- card 4 -->
+        <div class="grid grid-cols-[40%_60%] gap-4">
+
+            <div class="overflow-hidden">
+              <img class="object-cover rounded-xl h-[160px]" src="./images/news_4.webp" alt="">
+            </div>
+    
+            <div class="w-full p-2 place-content-center">
+  
+              <h3 class="text-lg font-bold leading-none">Оборудование</h3>
+  
+              <p class="mt-3">
+                Мы располагаем всем необходимым, чтобы быстро и качественно выполнить работы любой степени сложности.
+              </p>
+            
+            </div>
+  
+          </div>
+
+            <!-- card 5 -->
+        <div class="grid grid-cols-[40%_60%] gap-4">
+
+            <div class="overflow-hidden">
+              <img class="object-cover rounded-xl h-[160px]" src="./images/news_5.webp" alt="">
+            </div>
+    
+            <div class="w-full p-2 place-content-center">
+  
+              <h3 class="text-lg font-bold leading-none">Оплата работ</h3>
+  
+              <p class="mt-3">
+                Наши тарифы на монтаж, ТО и ремонт котлов зависят, в первую очередь, от сложности котельного оборудования, сроков работ и необходимости замены тех или иных запчастей.
+              </p>
+            
+            </div>
+  
+          </div>
+
+            <!-- card 6 -->
+        <div class="grid grid-cols-[40%_60%] gap-4">
+
+            <div class="overflow-hidden">
+              <img class="object-cover rounded-xl h-[160px]" src="./images/news_6.webp" alt="">
+            </div>
+    
+            <div class="w-full p-2 place-content-center">
+  
+              <h3 class="text-lg font-bold leading-none">Сроки</h3>
+  
+              <p class="mt-3">
+                В праздничные и выходных дни, а также в промежутке от 20:00 до 8:00 стоимость услуг определяется индивидуально.
+              </p>
+            
+            </div>
+  
+          </div>
+
+    </div>
+
+      </div>
+
+   </section> 
+
+     <!--================= map ================-->
+
+     <section class="reveal bg-[#f8fcff] pt-20">
+
+        <div class="mx-auto max-w-7xl">
+
+            <div class="text-center px-4">
+            
+                <h2 class="mb-4 font-bold text-4xl">Зона обслуживания</h2>
+
+                <h5 class="text-md tracking-wide">Волоколамск / Лотошино / Шаховская / Руза / Истра / Клин</h5>
+                
+            </div>
+
+        </div>
+
+            <div class="mx-auto max-w-4xl mt-10">                 
+       
+                    <div class="w-full h-11 rounded-t-lg bg-gray-200 flex justify-start items-center space-x-1.5 px-3">
+                        <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                    </div>
+
+                    <div class="bg-gray-50 border-t-0 w-full h-96">
+
+                          <!-- yandex kozgov -->
+                        <div class="w-full h-full overflow-hidden" id="map">                     
+
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab39e7c0c6bdfc9c9f9ba97ffbdf1686ae743f71cb5fb60e90f066d0409c97cbb&amp;svg_cicleid=width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script> 
+        
+                            </div> 
+
+                    </div>                   
+              
+                </div>
+
+    </section>      
+
+    </main>        
+    
+    <!--================= footer ================-->
+
+    <footer class="w-full border-t-1 border-solid border-gray-100 py-20 px-4 mb-6" id="contact">
+
+        <div class="mx-auto max-w-7xl flex flex-row flex-wrap gap-6 justify-center">    
+
+            <!-- 1 -->         
+            <div class="w-full lg:w-[40%] lg:flex-1 justify-items-center">   
+                
+                <div class="flex flex-row items-center flex-shrink-0">
+
+                <svg class="w-9 h-9 text-red-500" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 8v8" />
+                <path d="M14 8l-2.5 4l2.5 4" />
+                <path d="M10 12h1.5" />
+                <path d="M7.5 4.21v.01" />
+                <path d="M4.21 7.5v.01" />
+                <path d="M3 12v.01" />
+                <path d="M4.21 16.5v.01" />
+                <path d="M7.5 19.79v.01" />
+                <path d="M12 21v.01" />
+                <path d="M16.5 19.79v.01" />
+                <path d="M19.79 16.5v.01" />
+                <path d="M21 12v.01" />
+                <path d="M19.79 7.5v.01" />
+                <path d="M16.5 4.21v.01" />
+                <path d="M12 3v.01" />
+            </svg>
+
+            <a class="px-1 text-xl font-bold text-red-500" href="https://kozgov.vercel.app/">ГазАкваСервис</a> 
+
+            </div>
+
+            <div class="flex text-sm mt-2">  
+        
+                © <script>document.write(new Date().getFullYear());</script>
+                
+                by 
+                                       
+                <a class="flex items-center ml-1 uppercase hover:text-red-500 hover:font-bold" href="https://github.com/yojeero" target="_blank">                       
+        
+                    yojee      
+                </a>
+                
+            </div> 
+
+            </div>
+ 
+            <!-- 2 -->
+            <div class="lg:w-[15%]">  
+
+              <p class="text-sm">Ссылки</p> 
+
+                <ul class="mt-3 space-y-3 text-xs uppercase">
+        
+                    <li><a href="#" class="hover:text-red-500 hover:font-bold">главная</a></li>        
+                    <li><a href="#about" class="hover:text-red-500 hover:font-bold">о нас</a></li>        
+                    <li><a href="#service" class="hover:text-red-500 hover:font-bold">услуги</a></li>        
+                    <li><a href="#news" class="hover:text-red-500 hover:font-bold">новости</a></li>        
+        
+                </ul>     
+
+            </div>
+
+            <!-- 3 -->
+            <div class="lg:w-[15%]">  
+
+                <p class="text-sm">Время работы</p> 
+
+                <dl class="mt-3 space-y-3 text-xs uppercase">
+                    <dt>
+                        Пн, Вт, Ср, Чт, Пт, Сб
+                    </dt>
+                    <dd class="font-bold">
+                        8:00 - 20:00
+                    </dd>
+                </dl>
+
+                <dl class="mt-3 space-y-3 text-xs uppercase">
+                    <dt>
+                        Воскресенье
+                    </dt>
+                    <dd class="font-bold">
+                        Выходной
+                    </dd>
+                </dl>
+  
+            </div>
+
+            <!-- 4 -->
+            <div class="lg:w-[15%]">      
+
+            <p class="text-sm">Контакты</p> 
+
+            <div class="mt-3 space-y-3 text-xs uppercase">         
+                
+            <p class="text-md font-bold">алексей</p>
+
+            <p class="text-md text-red-500 font-bold">(+7) 916 748 04 04</p>
+
+            <p class="text-md text-red-500 font-bold">
+                <a class="hover:text-black"
+                    onClick="javascript:window.open('mailto:info@kozgov.ru', 'Mail'); event.preventDefault()"
+                    href="mailto:info@kozgov.ru?Subject=Hi%20Yojee">
+            
+                    info@kozgov.ru
+                </a>
+            </p>
+             
+                
+            </div> 
+
+            </div>
+
+            <!-- 5 --> 
+            <div class="lg:w-[15%]">  
+
+            <p class="text-sm">Cоцсети</p>       
+
+            <div class="mt-3 flex flex-row gap-x-3">
+
+                <!-- vk -->
+                <a href="https://vk.com/kozgov" target="_blank">
+                    
+                    <svg class="w-6 h-6 text-slate-500 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                    d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z">
+                    </path>
+                    </svg>
+                
+                </a>         
+
+                 <!-- ok -->
+                 <a href="https://ok.ru/group/57224192065662" target="_blank">
+                    <svg class="w-6 h-6 text-slate-500 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                    d="m12.088 14.532 2.888 2.888a1.511 1.511 0 1 1-2.138 2.137l-2.837-2.837-2.851 2.837c-.288.295-.675.442-1.063.442s-.775-.148-1.063-.442c-.6-.591-.6-1.55 0-2.137l2.888-2.888a9.6 9.6 0 0 1-2.996-1.241 1.512 1.512 0 1 1 1.61-2.56 6.56 6.56 0 0 0 6.95 0 1.513 1.513 0 0 1 1.612 2.56 9.7 9.7 0 0 1-3 1.241M10 10.322a5.167 5.167 0 0 1-5.162-5.16C4.838 2.314 7.154 0 10 0s5.162 2.315 5.162 5.162A5.167 5.167 0 0 1 10 10.322m0-7.297c-1.178 0-2.138.959-2.138 2.137S8.822 7.3 10 7.3a2.14 2.14 0 0 0 2.138-2.138A2.14 2.14 0 0 0 10 3.025" />
+                    </svg>
+                </a>
+                
+                    <!-- youtube -->
+                    <a href="https://www.youtube.com/playlist?list=PLlAv2xzR8ipGxMtKrdd7uL3KnjS3-WVMi" target="_blank">
+                        
+                    <svg class="w-6 h-6 text-slate-500 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                    d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" />
+                    </svg>
+                        
+                    </a>                    
+                
+            </div> 
+
+            </div>
+   
+        </div>                   
+
+    </footer>   
+
+    <!-- ALL JS -->
+
+    <script src="js/scrollreveal.min.js"></script> 
+    <script src="js/app.js"></script>
+    <script src="js/visiters-counter.js"></script>
+    <script src="js/yandex-map.js"></script>
+    <script src="js/up.min.js"></script>   
+
+</body>
+</html>
+
