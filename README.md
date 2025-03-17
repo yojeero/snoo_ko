@@ -1,6 +1,6 @@
 <img src="preview/git.png">
 
-### [Snoo_Ko](https://kozgov.vercel.app/) - "GasAquaService" company for maintenance of gas boilers and clean water services site.
+### [Snoo_Ko](https://kozgov.vercel.app/) - maintenance of gas boilers site.
 
 - Tailwind CSS v4
 - HTML5, CSS3
