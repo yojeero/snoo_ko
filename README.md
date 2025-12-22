@@ -1,10 +1,13 @@
-<img src="preview/git.png">
+<img src="preview/git.webp">
 
-### [Snoo_Ko](https://kozgov.vercel.app/) - corporate site.
+### [Snoo_Ko](https://kozgov.vercel.app/) - corporate site
 
 - Tailwind CSS v4
-- HTML5, CSS3
-- Inline SVG icons 
-- Local Google Fonts
-- Yandex Maps
-- Fully responsive layout
+- HTML5 and CSS
+- SVG icons
+- Google Fonts
+- 100% Responsive
+- Whatsapp chat
+- Visiters counter
+- Yandex maps
+- Scroll reveal
