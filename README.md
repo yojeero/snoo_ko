@@ -1,4 +1,4 @@
-<img src="preview/git.webp">
+<img src="preview/preview.jpg" width="830">   
 
 ### [Snoo_Ko](https://kozgov.vercel.app/) - corporate site
 
