@@ -1,4 +1,4 @@
-<img src="preview/preview.jpg" width="830">   
+<img src="preview/snoo_k.jpg"  width="100%" max-width="800px">   
 
 ### [Snoo_Ko](https://kozgov.vercel.app/) - корпоративный сайт
 
