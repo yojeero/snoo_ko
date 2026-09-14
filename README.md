@@ -1,8 +1,6 @@
 <img src="preview/snoo_k.jpg"  width="100%" max-width="800px">   
 
-### [Snoo_Ko](https://kozgov.vercel.app/) - корпоративный сайт
-
-<img alt="" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" height="20"/><img alt="" src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" height="20"/><img alt="" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" height="20"/><img alt="" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" height="20"/><img alt="" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" height="20"/><img alt="" src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" height="20"/>
+### [SnooKo](https://kozgov.vercel.app/) - корпоративный сайт
 
 #### Полностью адаптивный дизайн
 Оптимизирован для настольных компьютеров, планшетов и мобильных устройств via Tailwind v4.
@@ -39,3 +37,8 @@ SEO-дружественная HTML-структура
 #### Простая настройка   
 Хорошо организованная структура HTML    
 Быстрая замена контента, изображений и цветов   
+
+##### Tech Stack   
+```
+Bun | Vite | Vercel | Tailwind | Vanilla JS   
+```
