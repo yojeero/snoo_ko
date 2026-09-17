@@ -2,7 +2,8 @@
 
 <img src="https://img.shields.io/badge/SnooKo-7678ed?style=for-the-badge" width="40%" alt="SnooKo">   
 
-> SnooKo - корпоративный сайт.      
+> [!NOTE]
+> Ключевые возможности 🧼         
 
 - Раздел новостей  
 - SEO-оптимизирован   
