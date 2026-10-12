@@ -1,6 +1,6 @@
-<img src="preview/snoo_k.jpg" width="100%">   
+<img src="preview/ko_1.webp" width="100%"><img src="preview/ko_2.webp" width="50%"><img src="preview/ko_3.webp" width="50%">   
 
-<img src="https://img.shields.io/badge/SnooKo-7678ed?style=for-the-badge" width="40%" alt="SnooKo">   
+<img src="https://img.shields.io/badge/Kozgov-7678ed?style=for-the-badge" width="40%" alt="SnooKo">   
 
 Ключевые возможности 🧼         
 
