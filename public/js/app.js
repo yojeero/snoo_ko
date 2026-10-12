@@ -1,12 +1,4 @@
 
-// ScrollReveall
-window.sr = ScrollReveal();sr.reveal('.reveal');
-
-// Nav
-// ScrollReveal
-window.sr = ScrollReveal();
-sr.reveal('.reveal');
-
 // Nav
 const nav = document.getElementById("nav-content");
 const menuBtn = document.getElementById("menu");

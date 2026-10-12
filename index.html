@@ -1,779 +1,868 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="ru">
-
-<head>
-
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <title>ГазАкваСервис</title>
-    
-    <meta name="description" content="Ремонт и техническое обслуживание котлов. Промывка котлов и отопления. Замена котлов. Монтаж газового оборудования и систем водоснабжения. Монтаж систем водоподготовки и отопления."/>
 
-    <meta name="keywords" content="диагностика и ремонт котлов и газового оборудования, техническое обслуживание котлов, монтаж и настройка работы котлов, промывка котлов и теплообменников, доставка запасных частей для котлов, удаление засоров в канализации – Любая сложность, алмазное бурение отверстий в бетоне, монтаж систем водоподготовки, монтаж систем отопления и теплых полов, монтаж дымоходов и газоходов, монтаж ретро-электропроводки, продажа газовых счётчиков G1.6, G4, G6 любого производителя, консультирование по эксплуатации котельного оборудования"/>
+    <meta
+      name="description"
+      content="Ремонт и техническое обслуживание котлов. Промывка котлов и отопления. Замена котлов. Монтаж газового оборудования и систем водоснабжения. Монтаж систем водоподготовки и отопления."
+    >
+
+    <meta
+      name="keywords"
+      content="диагностика и ремонт котлов и газового оборудования, техническое обслуживание котлов, монтаж и настройка работы котлов, промывка котлов и теплообменников, доставка запасных частей для котлов, удаление засоров в канализации – Любая сложность, алмазное бурение отверстий в бетоне, монтаж систем водоподготовки, монтаж систем отопления и теплых полов, монтаж дымоходов и газоходов, монтаж ретро-электропроводки, продажа газовых счётчиков G1.6, G4, G6 любого производителя, консультирование по эксплуатации котельного оборудования"
+    >
 
     <link rel="icon" type="image/svg+xml" href="./images/fav.svg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-
     <!-- CSS -->
     <script type="module">
-        import "/src/css/style.css"
+    import "/src/css/style.css";
     </script>
+  </head>
 
-</head>
-
-<body class="loading">
-
-  <div class="loader">
-    <div class="loader-spinner"></div>
-  </div>
-
+  <body>
     <main>
+      <header id="top">
+        <div class="logo">
+          <a href="https://kozgov.vercel.app/" target="_blank">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 8v8" />
+              <path d="M14 8l-2.5 4l2.5 4" />
+              <path d="M10 12h1.5" />
+              <path d="M7.5 4.21v.01" />
+              <path d="M4.21 7.5v.01" />
+              <path d="M3 12v.01" />
+              <path d="M4.21 16.5v.01" />
+              <path d="M7.5 19.79v.01" />
+              <path d="M12 21v.01" />
+              <path d="M16.5 19.79v.01" />
+              <path d="M19.79 16.5v.01" />
+              <path d="M21 12v.01" />
+              <path d="M19.79 7.5v.01" />
+              <path d="M16.5 4.21v.01" />
+              <path d="M12 3v.01" />
+            </svg>
 
-        <header>  
+            ГазАкваСервис
+          </a>
+        </div>
 
-          <div class="logo">    
+        <div class="top-nav">
+          <div class="top-phone">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
 
-         <a href="https://kozgov.vercel.app/" target="_blank">
+            +7 916 748 04 04
+          </div>
 
-                        <svg  viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M10 8v8" />
-                            <path d="M14 8l-2.5 4l2.5 4" />
-                            <path d="M10 12h1.5" />
-                            <path d="M7.5 4.21v.01" />
-                            <path d="M4.21 7.5v.01" />
-                            <path d="M3 12v.01" />
-                            <path d="M4.21 16.5v.01" />
-                            <path d="M7.5 19.79v.01" />
-                            <path d="M12 21v.01" />
-                            <path d="M16.5 19.79v.01" />
-                            <path d="M19.79 16.5v.01" />
-                            <path d="M21 12v.01" />
-                            <path d="M19.79 7.5v.01" />
-                            <path d="M16.5 4.21v.01" />
-                            <path d="M12 3v.01" />
-                        </svg>               
+          <a
+            class="top-chat"
+            href="https://wa.me/79167480404?text=Я%20заинтересован%20в%20ваших%20услугах"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              <path d="M8 10h.01" />
+              <path d="M12 10h.01" />
+              <path d="M16 10h.01" />
+            </svg>
 
-                          ГазАкваСервис
+            алексей чат
+          </a>
 
-                        </a>
+          <div class="top-visite">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+              <polyline points="16 7 22 7 22 13" />
+            </svg>
 
-                    </div>
+            <span class="counter-value" data-target="1532">420</span>
 
-            <div class="top-nav">      
-       
-                    <div class="top-phone">
+            просмотров
+          </div>
+        </div>
 
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
+        <!-- navigation -->
 
-                                +7 916 748 04 04
+        <!-- open button -->
+        <button id="menu" type="button" aria-label="Open menu">
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
 
-                    </div>
-       
-                    <a class="top-chat" href="https://wa.me/79167480404?text=Я%20заинтересован%20в%20ваших%20услугах" target="_blank">
+        <!-- close button -->
+        <button id="close-nav" type="button" aria-label="Close menu">
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M7 7h10v10" />
+            <path d="M7 17 17 7" />
+          </svg>
+        </button>
 
-                        <svg viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                            <path d="M8 10h.01" />
-                            <path d="M12 10h.01" />
-                            <path d="M16 10h.01" />
-                        </svg>
+        <div id="nav-overlay"></div>
 
-                        алексей чат
+        <!-- nav content-->
+        <div id="nav-content">
+          <ul class="nav">
+            <li class="li-brand">ГазАкваСервис &reg;</li>
 
-                    </a>
+            <li><a href="#top">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#service">Услуги</a></li>
+            <li><a href="#news">Новости</a></li>
+            <li><a href="#contact">Контакт</a></li>
 
-                    <div class="top-visite">
-                
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-                        <polyline points="16 7 22 7 22 13" />
-                    </svg>          
-                        
-                        <span class="counter-value" data-target="1532">420</span>  
+            <li class="last">Copyright &copy; ГазАкваСервис</li>
+          </ul>
+        </div>
+      </header>
 
-                                просмотров 
+      <section class="top-wrap">
+        <div class="top-bg">
+          <div class="head-text">
+            <div class="head-about">
+              <h1>алексей</h1>
 
-                        </div>
+              <h2>мастер</h2>
 
-                    </div>
+              <div class="head-offer">
+                <div>
+                  <img src="./images/k-1.webp" alt="">
+                  <img src="./images/k-2.webp" alt="">
+                  <img src="./images/k-3.webp" alt="">
+                </div>
 
-                   <!-- navigation -->
-
-                <!-- open button -->
-                <button id="menu">
-
-                    <svg viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <line x1="4" x2="20" y1="12" y2="12" />
-                        <line x1="4" x2="20" y1="6" y2="6" />
-                        <line x1="4" x2="20" y1="18" y2="18" />
-                    </svg>
-
-                </button>
-
-                <!-- close button -->
-                <button id="close-nav">
-
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 7h10v10" />
-                        <path d="M7 17 17 7" />
-                    </svg>
-
-                </button>
-
-                <div id="nav-overlay"></div>
-
-              <!-- nav content-->
-                <div id="nav-content">
-
-                    <ul class="nav">
-
-                        <li class="li-brand">ГазАкваСервис &reg;</li>
-
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#about">О нас</a></li>
-                            <li><a href="#service">Услуги</a></li>
-                            <li><a href="#news">Новости</a></li>
-                            <li><a href="#contact">Контакт</a></li>
-
-                            <li class="last">Copyright &copy; ГазАкваСервис</li>
-
-                        </ul>
-
-                    </div>      
-
-        </header>
-
-   <section class="top-wrap">
-
-                <div class="top-bg">
-
-                    <div class="head-text">
-
-                        <div class="head-about">
-
-                            <h1>алексей</h1>
-
-                            <h2>мастер</h2>
-
-                              <div class="head-offer">
-
-                                <div>
-                                    <img src="./images/k-1.webp" alt="" />
-                                    <img src="./images/k-2.webp" alt="" />
-                                    <img src="./images/k-3.webp" alt="" />
-                                </div>
-
-                                <p>Присоединяйтесь к более, чем <span>240+ клиентов</span>, довольных результатом нашей работы.</p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="head-chat">
-
-                            <a class="btn" href="https://wa.me/79167480404?text=Я%20заинтересован%20в%20ваших%20услугах"
-                                target="_blank">
-
-                                чат
-
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M8 9h8" />
-                                    <path d="M8 13h6" />
-                                    <path
-                                        d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z" />
-                                </svg>
-
-                            </a>            
-
-                            <svg class="social" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M5 12h.5m3 0h1.5m3 0h6" />
-                                <path d="M15 16l4 -4" />
-                                <path d="M15 8l4 4" />
-                            </svg>           
-
-                            <!-- youtube -->
-                            <a href="https://www.youtube.com/playlist?list=PLlAv2xzR8ipGxMtKrdd7uL3KnjS3-WVMi"
-                                target="_blank">
-
-                                <svg class="social" viewBox="0 0 24 24"
-                                    fill="currentColor">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" />
-                                </svg>
-
-                            </a>
-
-                            <!-- vk -->
-                            <a href="https://vk.com/kozgov" target="_blank">
-
-                                <svg class="social" viewBox="0 0 24 24"
-                                    fill="currentColor">
-                                    <path
-                                        d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z">
-                                    </path>
-                                </svg>
-
-                            </a>
-
-                            <!-- ok -->
-                            <a href="https://ok.ru/group/57224192065662" target="_blank">
-
-                                <svg class="social" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path
-                                        d="m12.088 14.532 2.888 2.888a1.511 1.511 0 1 1-2.138 2.137l-2.837-2.837-2.851 2.837c-.288.295-.675.442-1.063.442s-.775-.148-1.063-.442c-.6-.591-.6-1.55 0-2.137l2.888-2.888a9.6 9.6 0 0 1-2.996-1.241 1.512 1.512 0 1 1 1.61-2.56 6.56 6.56 0 0 0 6.95 0 1.513 1.513 0 0 1 1.612 2.56 9.7 9.7 0 0 1-3 1.241M10 10.322a5.167 5.167 0 0 1-5.162-5.16C4.838 2.314 7.154 0 10 0s5.162 2.315 5.162 5.162A5.167 5.167 0 0 1 10 10.322m0-7.297c-1.178 0-2.138.959-2.138 2.137S8.822 7.3 10 7.3a2.14 2.14 0 0 0 2.138-2.138A2.14 2.14 0 0 0 10 3.025" />
-                                </svg>
-
-                            </a>
-
-                        </div>
-                    </div>
-
-                <div class="head-pic"><img  src="./images/top.webp" alt=""></div>
-
+                <p>
+                  Присоединяйтесь к более, чем <span>240+ клиентов</span>, довольных
+                  результатом нашей работы.
+                </p>
+              </div>
             </div>
 
-        </section>
+            <div class="head-chat">
+              <a
+                class="btn-chat"
+                href="https://wa.me/79167480404?text=Я%20заинтересован%20в%20ваших%20услугах"
+                target="_blank"
+              >
+                чат
 
-        <!--================= equipment ================-->
+                <svg
+                  class="w-6 h-6 ml-2"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M8 9h8" />
+                  <path d="M8 13h6" />
+                  <path
+                    d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z"
+                  />
+                </svg>
+              </a>
 
-       <section class="reveal brands">
-            <img src="./images/buderus.webp" alt="" />
-            <img src="./images/ferroli.webp" alt="" />
-            <img src="./images/baxi.webp" alt="" />
-            <img src="./images/bosch.webp" alt="" />
-            <img src="./images/viessmann.webp" alt="" />
-        </section>
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6 text-slate-500 ml-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12h.5m3 0h1.5m3 0h6" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
 
-        <!--================= about ================-->
+              <!-- youtube -->
+              <a
+                href="https://www.youtube.com/playlist?list=PLlAv2xzR8ipGxMtKrdd7uL3KnjS3-WVMi"
+                target="_blank"
+              >
+                <span class="sr-only">YouTube</span>
 
-        <section class="reveal" id="about">
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-slate-500 hover:text-red-500 ml-0"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"
+                  />
+                </svg>
+              </a>
 
-              <div class="about-1">
+              <!-- vk -->
+              <a href="https://vk.com/kozgov" target="_blank">
+                <span class="sr-only">VK</span>
 
-                    <img src="./images/app_1.webp" alt="" />
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-slate-500 hover:text-red-500 ml-0"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"
+                  ></path>
+                </svg>
+              </a>
 
-                  <div class="about-txt">
+              <!-- ok -->
+              <a href="https://ok.ru/group/57224192065662" target="_blank"
+                ><span class="sr-only">OK</span>
 
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M10 8v8" />
-                            <path d="M14 8l-2.5 4l2.5 4" />
-                            <path d="M10 12h1.5" />
-                            <path d="M7.5 4.21v.01" />
-                            <path d="M4.21 7.5v.01" />
-                            <path d="M3 12v.01" />
-                            <path d="M4.21 16.5v.01" />
-                            <path d="M7.5 19.79v.01" />
-                            <path d="M12 21v.01" />
-                            <path d="M16.5 19.79v.01" />
-                            <path d="M19.79 16.5v.01" />
-                            <path d="M21 12v.01" />
-                            <path d="M19.79 7.5v.01" />
-                            <path d="M16.5 4.21v.01" />
-                            <path d="M12 3v.01" />
-                        </svg>
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6 text-slate-500 hover:text-red-500 ml-0"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="m12.088 14.532 2.888 2.888a1.511 1.511 0 1 1-2.138 2.137l-2.837-2.837-2.851 2.837c-.288.295-.675.442-1.063.442s-.775-.148-1.063-.442c-.6-.591-.6-1.55 0-2.137l2.888-2.888a9.6 9.6 0 0 1-2.996-1.241 1.512 1.512 0 1 1 1.61-2.56 6.56 6.56 0 0 0 6.95 0 1.513 1.513 0 0 1 1.612 2.56 9.7 9.7 0 0 1-3 1.241M10 10.322a5.167 5.167 0 0 1-5.162-5.16C4.838 2.314 7.154 0 10 0s5.162 2.315 5.162 5.162A5.167 5.167 0 0 1 10 10.322m0-7.297c-1.178 0-2.138.959-2.138 2.137S8.822 7.3 10 7.3a2.14 2.14 0 0 0 2.138-2.138A2.14 2.14 0 0 0 10 3.025"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
 
-                        <h2>ГазАкваСервис</h2>
+          <div class="head-pic-wrap">
+            <img class="head-pic" src="./images/top.webp" alt="top-image">
+          </div>
+        </div>
+      </section>
 
-                        <p>Ремонт, монтаж и техническое обслуживание газового оборудования лучших производителей.</p>
+      <!--================= equipment ================-->
 
-                        <p>Мы используем индивидуальный и комплексный подход к решению любых проблем в системе отопления зданий и помещений.</p>
+      <section class="brands">
+        <img class="brands-1" src="./images/buderus.webp" alt="brand-pic">
+        <img class="brands-1" src="./images/ferroli.webp" alt="brand-pic">
+        <img class="brands-1" src="./images/baxi.webp" alt="brand-pic">
+        <img class="brands-1" src="./images/bosch.webp" alt="brand-pic">
+        <img class="brands-1" src="./images/viessmann.webp" alt="brand-pic">
+      </section>
 
-                    </div>
+      <!--================= about ================-->
 
-                </div>
+      <section id="about">
+        <div class="about-1">
+          <img
+            class="hidden lg:block h-[80%] self-center object-cover"
+            src="./images/app_1.webp"
+            alt="about-image"
+          >
+          <div class="about-txt">
+            <svg
+              class="w-12 h-12 text-red-600 ml-6"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 8v8" />
+              <path d="M14 8l-2.5 4l2.5 4" />
+              <path d="M10 12h1.5" />
+              <path d="M7.5 4.21v.01" />
+              <path d="M4.21 7.5v.01" />
+              <path d="M3 12v.01" />
+              <path d="M4.21 16.5v.01" />
+              <path d="M7.5 19.79v.01" />
+              <path d="M12 21v.01" />
+              <path d="M16.5 19.79v.01" />
+              <path d="M19.79 16.5v.01" />
+              <path d="M21 12v.01" />
+              <path d="M19.79 7.5v.01" />
+              <path d="M16.5 4.21v.01" />
+              <path d="M12 3v.01" />
+            </svg>
+
+            <h2>ГазАкваСервис</h2>
+
+            <p>
+              Ремонт, монтаж и техническое обслуживание газового оборудования лучших
+              производителей.
+            </p>
+
+            <p>
+              Мы используем индивидуальный и комплексный подход к решению любых проблем в
+              системе отопления зданий и помещений.
+            </p>
+          </div>
+        </div>
 
         <div class="about-2">
+          <div class="about-txt">
+            <svg
+              class="w-12 h-12 text-red-600 ml-6"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+              />
+              <path
+                d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+              />
+              <path d="M9 17v-4" />
+              <path d="M12 17v-1" />
+              <path d="M15 17v-2" />
+              <path d="M12 17v-1" />
+            </svg>
 
-                    <div class="about-txt">   
+            <h2>Наши преимущества</h2>
 
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path
-                                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
-                            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
-                            <path d="M9 17v-4" />
-                            <path d="M12 17v-1" />
-                            <path d="M15 17v-2" />
-                            <path d="M12 17v-1" />
-                        </svg>
+            <p>Высокое качество предоставляемых услуг.</p>
+            <p>Широкий спектр обслуживаемых марок.</p>
+            <p>Сжатые cроки выполнения заказа.</p>
+            <p>Профессионализм и опыт работ.</p>
+            <p>Демократичные цены.</p>
+            <p>Гарантии.</p>
+          </div>
 
-                        <h2>Наши преимущества</h2>
+          <img
+            class="hidden lg:block h-[80%] self-center object-cover"
+            src="./images/app_2.webp"
+            alt="about-image"
+          >
+        </div>
+      </section>
 
-                            <p>Высокое качество предоставляемых услуг.</p>
-                            <p>Широкий спектр обслуживаемых марок.</p>
-                            <p>Сжатые cроки выполнения заказа.</p>
-                            <p>Профессионализм и опыт работ.</p>
-                            <p>Демократичные цены.</p>
-                            <p>Гарантии.</p>
+      <!--================= service ================-->
 
-                    </div>
+      <section id="service">
+        <div class="service-wrap">
+          <div class="cards-label">
+            <h2>Наши услуги</h2>
+            <h5>Для постоянных клиентов действует гибкая система скидок.</h5>
+          </div>
 
-                    <img src="./images/app_2.webp" alt="" />
-
-                </div>
-
-        </section>
-
-        <!--================= service ================-->
-
-        <section class="reveal" id="service">
-
-            <div class="service-wrap">
-
-                <div class="cards-label">
-                    <h2>Наши услуги</h2>
-                    <h5>Для постоянных клиентов действует гибкая система скидок.</h5>
-                </div>
-
-        <div class="cards-grid">
-
-                    <!-- service 1 -->
-                    <div class="service-card">           
-
-                            <div>
-                                <svg class="text-blue-600" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M3 21v-13l9 -4l9 4v13" />
-                                    <path d="M13 13h4v8h-10v-6h6" />
-                                    <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
-                                </svg>
-
-                            </div>
-          
-
-                        <h5>Диагностика и ремонт котлов и газового оборудования</h5>
-                        <p>Консультирование по эксплуатации котельного оборудования.</p>
-
-                    </div>
-
-                    <!--  service 2 -->
-                    <div class="service-card">
-
-                            <div>
-                                <svg class="text-red-600" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M12 7h.01" />
-                                    <path d="M15 7h.01" />
-                                    <path d="M9 7h.01" />
-                                    <path
-                                        d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
-                                    <path d="M9 15h6" />
-                                    <path d="M5 11h14" />
-                                </svg>
-                            </div>        
-
-                        <h5>Монтаж газового оборудования</h5>
-                        <p>Замена котлов. Монтаж и настройка работы котлов.</p>
-
-                    </div>
-
-                    <!-- service 3 -->
+          <div class="cards-grid">
+            <!-- service 1 -->
             <div class="service-card">
-               
-                            <div>
-                                <svg class="text-green-600" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z" />
-                                    <path d="M12 14m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                                    <path d="M8 6h.01" />
-                                    <path d="M11 6h.01" />
-                                    <path d="M14 6h2" />
-                                    <path d="M8 14c1.333 -.667 2.667 -.667 4 0c1.333 .667 2.667 .667 4 0" />
-                                </svg>
-                            </div>
+              <div>
+                <svg
+                  aria-hidden="true"
+                  class="text-blue-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M3 21v-13l9 -4l9 4v13" />
+                  <path d="M13 13h4v8h-10v-6h6" />
+                  <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" />
+                </svg>
+              </div>
 
-                        <h5>Промывка котлов и отопления</h5>
-                        <p>Техническое обслуживание котлов. Промывка теплообменников.</p>
-
-                    </div>
-
-                    <!-- service  4 -->
-   <div class="service-card">            
-
-                            <div>
-                                <svg class="text-sky-500" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12 20l-3 1v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1.5" />
-                                    <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                                    <path d="M19.001 15.5v1.5" />
-                                    <path d="M19.001 21v1.5" />
-                                    <path d="M22.032 17.25l-1.299 .75" />
-                                    <path d="M17.27 20l-1.3 .75" />
-                                    <path d="M15.97 17.25l1.3 .75" />
-                                    <path d="M20.733 20l1.3 .75" />
-                                </svg>
-                            </div>
-
-                        <h5>Монтаж дымоходов и газоходов</h5>
-                        <p>Продажа газовых счётчиков любого производителя.</p>
-
-                    </div>
-
-                    <!-- service  5 -->
-         <div class="service-card"> 
-
-                            <div>
-                                <svg class="text-orange-500" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M2 12h2l2 -5l3 10l3 -10l3 10l3 -10l1.5 5h2.5" />
-                                </svg>
-
-                            </div>
-
-                        <h5>Монтаж ретро-электропроводки</h5>
-                        <p>Алмазное бурение отверстий в бетоне. Уникальное оборудование.</p>
-
-                    </div>
-
-                    <!--  service 6 -->
-                     <div class="service-card"> 
-
-                            <div>
-                                <svg class="text-violet-600" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M4.072 20.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />
-                                    <path
-                                        d="M16.072 20.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />
-                                    <path
-                                        d="M10.072 10.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z" />
-                                </svg>
-                            </div>
-
-                        <h5>Монтаж систем водоснабжения</h5>
-                        <p>Монтаж теплых полов. Удаление засоров в канализации.</p>
-
-                    </div>
-                </div>
-
+              <h5>Диагностика и ремонт котлов и газового оборудования</h5>
+              <p>Консультирование по эксплуатации котельного оборудования.</p>
             </div>
 
-        </section>
+            <!--  service 2 -->
+            <div class="service-card">
+              <div>
+                <svg
+                  aria-hidden="true"
+                  class="text-red-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 7h.01" />
+                  <path d="M15 7h.01" />
+                  <path d="M9 7h.01" />
+                  <path
+                    d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z"
+                  />
+                  <path d="M9 15h6" />
+                  <path d="M5 11h14" />
+                </svg>
+              </div>
 
-        <!--================= news ================-->
-
-        <section class="reveal" id="news">
-
-   <div class="cards-label">
-
-                    <h2>Новости</h2>
-                    <h5>Мы на рынке обслуживания котлов более 10 лет.</h5>
-
-                </div>
-
-                <div class="news-grid">  
-
-                    <!-- card 1 -->
-                    <div class="news-card">
-
-                            <img src="./images/news_1.webp" alt="">
-
-                        <div>
-                            <h3>Котлы сегодня</h3>
-                            <p>Их установка, сервис и ремонт представляют собой сложные технологические процессы, требующие специальных знаний и высокой квалификации.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 2 -->
-                      <div class="news-card">
-
-                            <img src="./images/news_2.webp" alt="">   
-
-                        <div>
-                            <h3>Ремонт</h3>
-                            <p>Самостоятельный ремонт или обслуживание отопительного оборудования могут нести серьезную угрозу здоровью и безопасности.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 3 -->
-                     <div class="news-card">
-
-                            <img src="./images/news_3.webp" alt="">          
-
-                        <div>
-                            <h3>Доверяйте профессионалам</h3>
-                            <p>Мы используем индивидуальный и комплексный подход к решению любых проблем в системе отопления зданий и помещений.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 4 -->
-                     <div class="news-card">
-
-                            <img src="./images/news_4.webp" alt="">         
-
-                        <div>
-                            <h3>Оборудование</h3>
-                            <p>Мы располагаем всем необходимым, чтобы быстро и качественно выполнить работы любой степени сложности.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 5 -->
-                   <div class="news-card">
-
-                        <img src="./images/news_5.webp" alt="">
-             
-                        <div>
-                            <h3>Оплата работ</h3>
-                            <p>Наши тарифы на монтаж, ТО и ремонт котлов зависят, в первую очередь, от сложности котельного оборудования, сроков работ и необходимости замены тех или иных запчастей.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 6 -->
-                    <div class="news-card">
-
-                            <img src="./images/news_6.webp" alt="">      
-
-                        <div>
-                            <h3>Сроки</h3>
-                            <p>В праздничные и выходных дни, а также в промежутке от 20:00 до 8:00 стоимость услуг определяется индивидуально.</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-        </section>
-
-        <!--================= map ================-->
-
-          <section class="reveal map-wrap">
-
-            <div class="cards-label">
-
-                    <h2>Зона обслуживания</h2>
-                    <h5>Волоколамск / Лотошино / Шаховская / Руза / Истра / Клин</h5>
-
-                </div>
-
-           <div class="map">
-
-                <div class="map-browser">
-                    <span class="bg-red-400"></span>
-                    <span class="bg-yellow-400"></span>
-                    <span class="bg-green-400"></span>
-                </div>
-
-                    <!-- yandex kozgov -->
-                 <div class="map-frame" id="map">
-
-                        <script type="text/javascript" charset="utf-8" async
-                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab39e7c0c6bdfc9c9f9ba97ffbdf1686ae743f71cb5fb60e90f066d0409c97cbb&amp;svg_cicleid=width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
-
-                    </div>
-
-                </div>
-
+              <h5>Монтаж газового оборудования</h5>
+              <p>Замена котлов. Монтаж и настройка работы котлов.</p>
             </div>
 
-        </section>
+            <!-- service 3 -->
+            <div class="service-card">
+              <div>
+                <svg
+                  aria-hidden="true"
+                  class="text-green-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z"
+                  />
+                  <path d="M12 14m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                  <path d="M8 6h.01" />
+                  <path d="M11 6h.01" />
+                  <path d="M14 6h2" />
+                  <path d="M8 14c1.333 -.667 2.667 -.667 4 0c1.333 .667 2.667 .667 4 0" />
+                </svg>
+              </div>
 
+              <h5>Промывка котлов и отопления</h5>
+              <p>Техническое обслуживание котлов. Промывка теплообменников.</p>
+            </div>
+
+            <!-- service  4 -->
+            <div class="service-card">
+              <div>
+                <svg
+                  aria-hidden="true"
+                  class="text-sky-500"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M12 20l-3 1v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v1.5"
+                  />
+                  <path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                  <path d="M19.001 15.5v1.5" />
+                  <path d="M19.001 21v1.5" />
+                  <path d="M22.032 17.25l-1.299 .75" />
+                  <path d="M17.27 20l-1.3 .75" />
+                  <path d="M15.97 17.25l1.3 .75" />
+                  <path d="M20.733 20l1.3 .75" />
+                </svg>
+              </div>
+
+              <h5>Монтаж дымоходов и газоходов</h5>
+              <p>Продажа газовых счётчиков любого производителя.</p>
+            </div>
+
+            <!-- service  5 -->
+            <div class="service-card">
+              <div>
+                <svg
+                  aria-hidden="true"
+                  class="text-orange-500"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M2 12h2l2 -5l3 10l3 -10l3 10l3 -10l1.5 5h2.5" />
+                </svg>
+              </div>
+
+              <h5>Монтаж ретро-электропроводки</h5>
+              <p>Алмазное бурение отверстий в бетоне. Уникальное оборудование.</p>
+            </div>
+
+            <!--  service 6 -->
+            <div class="service-card">
+              <div>
+                <svg
+                  aria-hidden="true"
+                  class="text-violet-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4.072 20.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z"
+                  />
+                  <path
+                    d="M16.072 20.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z"
+                  />
+                  <path
+                    d="M10.072 10.3a2.999 2.999 0 0 0 3.856 0a3.002 3.002 0 0 0 .67 -3.798l-2.095 -3.227a.6 .6 0 0 0 -1.005 0l-2.098 3.227a3.003 3.003 0 0 0 .671 3.798z"
+                  />
+                </svg>
+              </div>
+
+              <h5>Монтаж систем водоснабжения</h5>
+              <p>Монтаж теплых полов. Удаление засоров в канализации.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================= news ================-->
+
+      <section id="news">
+        <div class="cards-label">
+          <h2>Новости</h2>
+          <h5>Мы на рынке обслуживания котлов более 10 лет.</h5>
+        </div>
+
+        <div class="news-grid">
+          <!-- card 1 -->
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_1.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Котлы сегодня</h3>
+              <p class="news-card__text">
+                Их установка, сервис и ремонт представляют собой сложные технологические
+                процессы, требующие специальных знаний и высокой квалификации.
+              </p>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_2.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Ремонт</h3>
+              <p class="news-card__text">
+                Самостоятельный ремонт или обслуживание отопительного оборудования могут
+                нести серьезную угрозу здоровью и безопасности.
+              </p>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_3.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Доверяйте профессионалам</h3>
+              <p class="news-card__text">
+                Мы используем индивидуальный и комплексный подход к решению любых проблем
+                в системе отопления зданий и помещений.
+              </p>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_4.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Оборудование</h3>
+              <p class="news-card__text">
+                Мы располагаем всем необходимым, чтобы быстро и качественно выполнить
+                работы любой степени сложности.
+              </p>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_5.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Оплата работ</h3>
+              <p class="news-card__text">
+                Наши тарифы на монтаж, ТО и ремонт котлов зависят, в первую очередь, от
+                сложности котельного оборудования, сроков работ и необходимости замены тех
+                или иных запчастей.
+              </p>
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_6.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Сроки</h3>
+              <p class="news-card__text">
+                В праздничные и выходных дни, а также в промежутке от 20:00 до 8:00
+                стоимость услуг определяется индивидуально.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================= map ================-->
+
+      <section class="map-wrap">
+        <div class="cards-label">
+          <h2>Зона обслуживания</h2>
+          <h5>Волоколамск / Лотошино / Шаховская / Руза / Истра / Клин</h5>
+        </div>
+
+        <div class="map">
+          <div class="map-browser">
+            <span class="bg-red-400"></span>
+            <span class="bg-yellow-400"></span>
+            <span class="bg-green-400"></span>
+          </div>
+
+          <!-- yandex kozgov -->
+          <div class="map-frame" id="map">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab39e7c0c6bdfc9c9f9ba97ffbdf1686ae743f71cb5fb60e90f066d0409c97cbb&amp;svg_cicleid=width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=false"
+            ></script>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--================= footer ================-->
 
     <footer id="contact">
+      <div class="foot-wrap">
+        <!-- foot 1 -->
+        <div class="foot-brand">
+          <div class="foot-logo">
+            <svg
+              class=" w-9 h-9 text-blue-500/70 hover:text-red-500 mr-1"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 8v8" />
+              <path d="M14 8l-2.5 4l2.5 4" />
+              <path d="M10 12h1.5" />
+              <path d="M7.5 4.21v.01" />
+              <path d="M4.21 7.5v.01" />
+              <path d="M3 12v.01" />
+              <path d="M4.21 16.5v.01" />
+              <path d="M7.5 19.79v.01" />
+              <path d="M12 21v.01" />
+              <path d="M16.5 19.79v.01" />
+              <path d="M19.79 16.5v.01" />
+              <path d="M21 12v.01" />
+              <path d="M19.79 7.5v.01" />
+              <path d="M16.5 4.21v.01" />
+              <path d="M12 3v.01" />
+            </svg>
 
-        <div class="foot-wrap">
+            <a class="footer-logo" href="https://kozgov.vercel.app/">ГазАкваСервис</a>
+          </div>
 
-            <!-- foot 1 -->
-            <div class="foot-brand">              
-
-                <div class="foot-logo">    
-
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 8v8" />
-                        <path d="M14 8l-2.5 4l2.5 4" />
-                        <path d="M10 12h1.5" />
-                        <path d="M7.5 4.21v.01" />
-                        <path d="M4.21 7.5v.01" />
-                        <path d="M3 12v.01" />
-                        <path d="M4.21 16.5v.01" />
-                        <path d="M7.5 19.79v.01" />
-                        <path d="M12 21v.01" />
-                        <path d="M16.5 19.79v.01" />
-                        <path d="M19.79 16.5v.01" />
-                        <path d="M21 12v.01" />
-                        <path d="M19.79 7.5v.01" />
-                        <path d="M16.5 4.21v.01" />
-                        <path d="M12 3v.01" />
-                    </svg>
-
-                    <a class="footer-logo" href="https://kozgov.vercel.app/">ГазАкваСервис</a>
-
-                </div>
-
-                <div class="copyright"> © 
-                    <script>document.write(new Date().getFullYear());</script> by<a href="https://github.com/yojeero" target="_blank"> yojee</a>
-                </div>
-
-            </div>
-
-            <!-- 2 -->
-              <div class="foot-column">
-
-                <p>Разделы</p>
-
-                <ul>
-                    <li><a href="#">главная</a></li>
-                    <li><a href="#about">о нас</a></li>
-                    <li><a href="#service">услуги</a></li>
-                    <li><a href="#news">новости</a></li>
-                </ul>
-
-            </div>
-
-            <!-- 3 -->
-       <div class="foot-column">
-
-                <p>Время работы</p>
-
-                <dl>
-                    <dt>Пн, Вт, Ср, Чт, Пт, Сб</dt>
-                    <dd>8:00 - 20:00</dd>
-                </dl>
-
-                <dl>
-                    <dt>Воскресенье</dt>
-                    <dd>Выходной</dd>
-                </dl>
-
-            </div>
-
-            <!-- 4 -->
-            <div class="foot-column">
-
-                <p>Контакты</p>
-
-                <div>
-
-                    <h5>алексей</h5>
-                    <p>(+7) 916 748 04 04</p>
-              
-                    <a class="foot-email" onClick="javascript:window.open('mailto:info@kozgov.ru', 'Mail'); event.preventDefault()" href="mailto:info@kozgov.ru?Subject=Hi%20Yojee">
-
-                        info@kozgov.ru
-
-                    </a>
-     
-                </div>
-
-            </div>
-
-            <!-- 5 -->
-       <div class="foot-column">
-
-                <p>Cоцсети</p>
-
-                <div class="foot-social">
-
-                    <!-- vk -->
-                    <a href="https://vk.com/kozgov" target="_blank">
-
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z">
-                            </path>
-                        </svg>
-
-                    </a>
-
-                    <!-- ok -->
-                    <a href="https://ok.ru/group/57224192065662" target="_blank">
-
-                        <svg viewBox="0 0 20 20" fill="currentColor">
-                            <path
-                                d="m12.088 14.532 2.888 2.888a1.511 1.511 0 1 1-2.138 2.137l-2.837-2.837-2.851 2.837c-.288.295-.675.442-1.063.442s-.775-.148-1.063-.442c-.6-.591-.6-1.55 0-2.137l2.888-2.888a9.6 9.6 0 0 1-2.996-1.241 1.512 1.512 0 1 1 1.61-2.56 6.56 6.56 0 0 0 6.95 0 1.513 1.513 0 0 1 1.612 2.56 9.7 9.7 0 0 1-3 1.241M10 10.322a5.167 5.167 0 0 1-5.162-5.16C4.838 2.314 7.154 0 10 0s5.162 2.315 5.162 5.162A5.167 5.167 0 0 1 10 10.322m0-7.297c-1.178 0-2.138.959-2.138 2.137S8.822 7.3 10 7.3a2.14 2.14 0 0 0 2.138-2.138A2.14 2.14 0 0 0 10 3.025" />
-                        </svg>
-
-                    </a>
-
-                    <!-- youtube -->
-                    <a href="https://www.youtube.com/playlist?list=PLlAv2xzR8ipGxMtKrdd7uL3KnjS3-WVMi" target="_blank">
-
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path
-                                d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" />
-                        </svg>
-
-                    </a>
-
-                </div>
-
-            </div>
-
+          <div class="copyright">
+            ©<script>
+            document.write(new Date().getFullYear());
+            </script> by
+            <a class="footer__link" href="https://github.com/yojeero" target="_blank">
+              yojee</a
+            >
+          </div>
         </div>
 
+        <!-- 2 -->
+        <div class="foot-column">
+          <p>Разделы</p>
+
+          <ul>
+            <li><a class="footer__link" href="#top">главная</a></li>
+            <li><a class="footer__link" href="#about">о нас</a></li>
+            <li><a class="footer__link" href="#service">услуги</a></li>
+            <li><a class="footer__link" href="#news">новости</a></li>
+          </ul>
+        </div>
+
+        <!-- 3 -->
+        <div class="foot-column">
+          <p>Время работы</p>
+
+          <dl>
+            <dt>Пн, Вт, Ср, Чт, Пт, Сб</dt>
+            <dd>8:00 - 20:00</dd>
+          </dl>
+
+          <dl>
+            <dt>Воскресенье</dt>
+            <dd>Выходной</dd>
+          </dl>
+        </div>
+
+        <!-- 4 -->
+        <div class="foot-column">
+          <p>Контакты</p>
+
+          <div>
+            <h5>алексей</h5>
+            <p>(+7) 916 748 04 04</p>
+
+            <a
+              class="footer__link"
+              onClick="javascript:window.open('mailto:info@kozgov.ru', 'Mail'); event.preventDefault()"
+              href="mailto:info@kozgov.ru?Subject=Hi%20Yojee"
+            >
+              info@kozgov.ru
+            </a>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="foot-column">
+          <p>Cоцсети</p>
+
+          <div class="foot-social">
+            <!-- vk -->
+            <a class="foot-social-link" href="https://vk.com/kozgov" target="_blank"
+              ><span class="sr-only">VK</span>
+
+              <svg
+                class="h-6 w-6 text-slate-400 hover:text-red-500"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"
+                ></path>
+              </svg>
+            </a>
+
+            <!-- ok -->
+            <a
+              class="foot-social-link"
+              href="https://ok.ru/group/57224192065662"
+              target="_blank"
+              ><span class="sr-only">OK</span>
+
+              <svg
+                class="h-6 w-6 text-slate-400 hover:text-red-500"
+                aria-hidden="true"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="m12.088 14.532 2.888 2.888a1.511 1.511 0 1 1-2.138 2.137l-2.837-2.837-2.851 2.837c-.288.295-.675.442-1.063.442s-.775-.148-1.063-.442c-.6-.591-.6-1.55 0-2.137l2.888-2.888a9.6 9.6 0 0 1-2.996-1.241 1.512 1.512 0 1 1 1.61-2.56 6.56 6.56 0 0 0 6.95 0 1.513 1.513 0 0 1 1.612 2.56 9.7 9.7 0 0 1-3 1.241M10 10.322a5.167 5.167 0 0 1-5.162-5.16C4.838 2.314 7.154 0 10 0s5.162 2.315 5.162 5.162A5.167 5.167 0 0 1 10 10.322m0-7.297c-1.178 0-2.138.959-2.138 2.137S8.822 7.3 10 7.3a2.14 2.14 0 0 0 2.138-2.138A2.14 2.14 0 0 0 10 3.025"
+                />
+              </svg>
+            </a>
+
+            <!-- youtube -->
+            <a
+              class="foot-social-link"
+              href="https://www.youtube.com/playlist?list=PLlAv2xzR8ipGxMtKrdd7uL3KnjS3-WVMi"
+              target="_blank"
+              ><span class="sr-only">YouTube</span>
+
+              <svg
+                class="h-6 w-6 text-slate-400 hover:text-red-500"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
-<!-- JS -->
+    <!-- JS -->
 
-  <!-- loader hide -->
-  <script>
-  window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
-    if (!loader) return;
-
-    document.body.classList.remove("loading");
-    loader.classList.add("opacity-0");
-
-    setTimeout(() => loader.remove(), 300);
-  });
-  </script> 
-
-    <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/visiters-counter.js"></script>
     <script src="./js/yandex-map.js"></script>
     <script src="./js/up.min.js"></script>
-
-</body>
+  </body>
 </html>

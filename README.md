@@ -2,13 +2,11 @@
 
 <img src="https://img.shields.io/badge/SnooKo-7678ed?style=for-the-badge" width="40%" alt="SnooKo">   
 
-> [!NOTE]
-> Ключевые возможности 🧼         
+Ключевые возможности 🧼         
 
 - Раздел новостей  
 - SEO-оптимизирован   
 - Интерактивная навигация   
-- Плавная анимация и эффекты   
 - Полностью адаптивный дизайн   
 - Интеграция с социальными сетями   
 - Оптимизирована производительность   
@@ -17,5 +15,18 @@
 
 #### Tech Stack   
 ```
-Bun | Vite | Tailwind CSS | Vanilla JS   
-```
+Bun | Vite | Biome | Tailwind CSS | Vanilla JS
+```   
+
+#### Commands
+
+All commands are run from the root of the project:
+
+| Command           | Action                                          |
+| :---------------- | :---------------------------------------------- |
+| `bun install`     | Installs dependencies                           |
+| `bun run dev`     | Starts local dev server at `localhost:4321`     |
+| `bun run build`   | Builds the production site to `./dist/`         |
+| `bun run preview` | Previews the build locally                      |
+| `bun run check`   | Lints + formats (Biome, applies safe fixes)     |
+| `bun run ci`      | Non-mutating Biome check for CI                 |   
